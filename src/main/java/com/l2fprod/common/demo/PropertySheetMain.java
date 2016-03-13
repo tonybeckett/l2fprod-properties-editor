@@ -34,6 +34,7 @@ public class PropertySheetMain extends JPanel {
 
   static ResourceManager RESOURCE = ResourceManager.get(PropertySheetMain.class);
 
+
   public PropertySheetMain(JFrame frame ) {
     setLayout(new BorderLayout());
 
@@ -53,6 +54,7 @@ public class PropertySheetMain extends JPanel {
     JFrame frame = new JFrame("PropertySheet");
     frame.getContentPane().setLayout(new BorderLayout());
     frame.getContentPane().add("Center", new PropertySheetMain(frame));
+
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.pack();
     frame.setLocation(100, 100);
